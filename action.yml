@@ -1,0 +1,19 @@
+name: Get issue ids from pull requests
+description: Get issue ids from pull requests
+author: Peter Szollar
+inputs:
+  token:
+    description: GitHub token.
+    required: true
+  pull_request_id:
+    description: Pull request(s) id.
+    required: true
+outputs:
+  ids:
+    description: Issue ids
+runs:
+  using: node12
+  main: dist/index.js
+branding:
+  icon: tag  
+  color: orange
